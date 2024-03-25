@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <!-- encoding utf-8 -->
+            <meta charset="utf-8">
+            <!-- title -->
+            <title>Checkout</title>
+            <!-- Link to css -->
+            <link rel="stylesheet" type="text/css" href="cardpayment.css">
+            <!-- Link to javascript file -->
+            <script src="buyProducts.js"></script>     
+        </head>
+        <body>
+            <!-- Navigation Bar -->
+             
+            <!-- form to fill in details -->
+            <form name="buyForm" action="confirmpage.html">
+                <div class="form-area">
+                    <div class="container">
+                        <!--Payment Details-->
+                        <fieldset id="PaymentDetails">
+                            <legend>Payment details</legend>
+                                
+                                <img src="images/card_img.png" alt="payicons"><br><br>
+                                
+                                <label for="cardNo">Card number:</label>
+                                <input type="text" id="cardNo" name="cardNo" placeholder="XXXXXXXXXXXXXXXX" maxlength="16" required>
+                                <br><br>
+                                 
+                                <label for="cardName">Cardholder's name:</label>
+                                <input type="text" id="cardName" name="cardName" placeholder="Cardholder's Name" required>
+                                <br><br>
+                                 
+                                <label for="expiryDate">Expiry Date:</label>
+                                <input type="month" id="expiryDate" name="expiryDate" required>
+                                <br><br>
+                                 
+                                <label for="securityCode">Security Code:</label>
+                                <input type="text" id="securityCode" name="securityCode" placeholder="XXXX" minlength="4" maxlength="4" required>	
+                        </fieldset>
+                         
+                        <!--Billing Address -->
+                        <fieldset id="BillingAddress"> 
+                            <legend>Billing address</legend>
+                                <label for="Fname">First Name:</label>
+                                <input type="text" id="Fname" name="Fname" placeholder="First Name" required>
+                                <br><br>
+
+                                <label for="Lname">Last Name:</label>
+                                <input type="text" id="Lname" name="Lname" placeholder="Last Name" required>
+                                <br><br>
+
+                                <label for="country">Country/Region:</label>
+                                <input type="text" id="country" name="country" placeholder="Country/Region" required>
+                                <br><br>
+                                 
+                                <label for="address">Address:</label>
+                                <input type="text" id="address" name="address" placeholder="Address" required>
+                                <br><br>
+                             
+                                <label for="city">Town/City:</label>
+                                <input type="text" id="city" name="city" placeholder="Town/City" required>
+                                <br><br>
+                             
+                                <label for="zip">Postcode/Zip:</label>
+                                <input type="text" id="zip" name="zip" placeholder="Postcode/Zip" required>
+                                <br><br>
+                        </fieldset>	
+                         
+                        <!--Contatct Details-->
+                        <fieldset id="ContatctDetails">				
+                            <legend>Contact details</legend>
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" id="phone" name="phone" placeholder="Phone Number" maxlength="10" required>
+                                <br><br>
+                                 
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <br><br>
+                        </fieldset>
+                         
+                        <!--Delivery Details-->
+                        <fieldset id="DeliveryDetails">				
+                            <legend>Delivery details</legend>	
+                             
+                                <label for="date">Delivery date:</label>
+                                <input type="date" id="date" name="date" >
+                                <br><br>
+                             
+                                <label for="notes">Order notes:</label>
+                                <textarea id="notes" name="notes" rows="5" cols="20"></textarea>
+                                <br><br>
+                        </fieldset>
+
+
+                        <!-- Showing the total -->
+                        <fieldset id="Totalitems">
+                            <legend>Total of items</legend>
+                            <div class="total">
+                                <h2 class="tot">Your Total Amount is : </h2>
+                                <h2 class="amount" id="amount">$ 0.00</h2>
+                            </div>
+                        </fieldset>
+
+                         
+                        <!--Submission-->
+                        <div class="btn-area">
+                            <input class="btn" type="reset" name="cancel" value="Reset">
+                            <input class="btn" type="submit" name="placeOrder" value="Confirm order" onclick="validate()"> <!--Button to validate the Form details-->	
+                        </div>
+                    </div>
+                </div>
+                <!-- calling the stored total to the payment preview -->
+                <script>
+                    const newtotal = localStorage.getItem("ekathuwa");
+                    document.getElementById("amount").textContent = newtotal;
+                </script>
+            </form>
+             
+             
+             
+        </body>
+    </html>

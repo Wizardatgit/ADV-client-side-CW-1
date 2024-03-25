@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- character encoding UTF-8 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Set the title of the page -->
+        <title>VSL | View Sri Lanka</title>
+        <!-- Link to css -->
+        <link rel="stylesheet" href="styleforshop.css">
+        <!-- Link for navbar and css -->
+        <link rel="stylesheet" href="navfooter.css">
+        <!-- preconnect to Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Link to the Google Font "Lexend" with various font weights -->
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap" rel="stylesheet">
+        <!-- fontawsome kit for icons-->
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!-- navbar -->
+        <header>
+            <nav class="navbar">
+                <a href="Tourism.html" class="logo">VISIT SRI LANKA</a>
+                <ul>
+                    <li><a class="navlistbtn" href="Tourism.html">Home</a></li>
+                    <li><a class="navlistbtn" href="/text editor/texteditor-1.html">About Us</a></li>
+                    <li><a class="navlistbtn" href="quizwebhtml.html">Quiz</a></li>
+                    <li><a class="navlistbtn" href="/shop page/shop.html">Store</a></li>
+                    <li><a class="navlistbtn" href="rate_us.html">Comment Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <!-- Main content section - Intro header -->
+    <div class="firstheader">
+        <div class="navcontainer">
+            <div class="raw">
+                <div class="col-2">
+                    <!-- Main heading for the View Sri Lanka section -->
+                    <h1>View Sri Lanka</h1>
+                    <!-- Description of the shop and its offerings -->
+                    <p>Discover the essence of Sri Lanka through our exquisite range of souvenirs.<br>
+                        From intricately handcrafted pendants to vibrant traditional textiles,<br> take home a piece of our rich culture and cherished memories.<br>
+                        Embrace the spirit of this beautiful island with our authentic keepsakes.<br>
+                    </p>
+                    <!-- Button to explore in the shop -->
+                    <a href="#count" class="btn">Explore Now &#10140;</a>
+                </div>
+                <div class="col-2">
+                    <!-- Image for the introduction header -->
+                    <img src="images/3fbd37d83d4e00e5b5baa0aedc7ab60e.png" alt="imageforintro">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shop header with the shopping cart icon and count -->
+    <div class="header">
+        <p id="logo">SHOP</p>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+
+    <!-- Main content section - Shopping cart and products -->
+    <div class="container">
+        <!-- Placeholder for dynamically generated cart items -->
+        <div id="root"></div>
+        <!-- Sidebar for displaying the shopping cart -->
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <!-- Placeholder for displaying cart items -->
+            <div id="cartitem">Your cart is empty</div>
+            <div class="foot">
+                <!-- Total amount of the items in the cart -->
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+            </div>
+            <!-- Form for proceeding to checkout -->
+            <form id="form">
+                <input class="button" type="submit" value="Proceed to checkout" onclick="proceedbutton()">
+            </form>
+        </div>
+    </div>
+    <!-- Link to the JavaScript file-->
+    <script src="checkout.js"></script>
+
+    <!-- Offer section for a featured product -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="raw">
+                <div class="col-3">
+                    <!-- Image of the featured product -->
+                    <img src="images/conch-48531.png" class="offer-img" alt="conchimage">
+                </div>
+                <div class="col-3">
+                    <!-- Information about the featured product -->
+                    <p>Exclusively Available on View Sri Lanka</p>
+                    <h1>Turbinella Conch</h1>
+                    <small>Turbinella pyrum  a marine gastropod mollusk in the family Turbinellidae.<br>
+                        Common name is chank shell, also known as the divine conch,<br> sometimes referred to simply as a conch.<br>
+                        Turbinella pyrum is a species of very large sea snail with a gill and an operculum.<br>
+                        Found by a Diver at 10m - 25m deep sea bed.<br>
+                    </small>
+                    <!-- Button to buy the featured product -->
+                    <a href="#count" class="btn">Buy now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section with links to pages and social media -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <!-- List of navigation links -->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutuspage.html">About</a></li>
+                        <li><a href="quizwebhtml.html">Quiz</a></li>
+                        <li><a href="shop.html">Store</a></li>
+                        <li><a href="rate_us.html">Comment Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <!-- List of links to team member pages -->
+                    <ul>
+                        <li><a href="texteditortithira.html">Tithira</a></li>
+                        <li><a href="texteditoreshan.html">Eshan</a></li>
+                        <li><a href="texteditorsadew.html">Sadew</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <p>Follow us on social media:</p>
+                    <!-- List of social media links -->
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

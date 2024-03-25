@@ -1,0 +1,114 @@
+    /* import poppings font with custom weight */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap'); 
+
+     body{
+         background-color:  black;
+         color: white;
+         font-family: 'Poppins', sans-serif;
+         margin: 0;   
+         scroll-behavior: smooth;
+     }
+     /*Styling the Form*/
+     .form-area{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     .container {
+         box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+         border-radius: 15px;
+         color: rgb(0, 0, 0);
+         background-image: linear-gradient(#6dd5ed,#2193b0);
+         padding: 20px;
+         height: auto;
+         width: 700px; 
+         margin:50px 0 50px 0;
+     }
+
+     /* styling the legends  */
+     legend {
+         text-align: center;
+         font-size: 20px;
+         padding-bottom: 5px;
+     }
+    /* adjusting the image  */
+     img{
+        display: flex;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+     }
+
+    /* fieldsets and the label */
+
+     fieldset{
+         margin-top: 5px;
+         margin-bottom: 20px;
+     }
+     label{
+         margin-left: 10px;
+         margin-top: 10px;
+         float:left;
+         width:25%; 
+     }
+
+     center{
+        margin-top: 30px;
+     }
+
+     input[type=month]:focus {
+     background-color: #d5f8eb;
+     }
+     
+     input[type=text],input[type=date],input[type=email],input[type=password], textarea {
+     width: 70%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     }
+     
+     input[type=text]:focus {
+     background-color: #d5f8eb;
+     }
+     
+     textarea:focus{
+     background-color: #d5f8eb;
+     }
+     input[type=email]:focus {
+     background-color: #d5f8eb;
+     }
+     input[type=date]:focus {
+     background-color: #d5f8eb;
+     }
+
+     .btn-area{
+     display: flex;
+     justify-content: right;
+     }
+
+    /* styling for submit button  */
+     .btn{
+         background-color: #0766ff;
+         color: white;
+         padding: 12px 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         transition: all 0.5s ease;
+         margin: 0 10px 0 10px;
+     }
+     .btn:hover{
+         background-color: #4acfff;
+         color: #000;
+     }
+
+     /* display total styles */
+     .total{
+        align-items: center;
+        margin: auto;
+        width: 21%;
+        text-align: center;
+     }
+
+     
